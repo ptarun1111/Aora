@@ -1,6 +1,7 @@
-import { View, Text, ScrollView, Image, StatusBar } from "react-native";
+import { View, Text, ScrollView, Image } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { router } from "expo-router";
+import { StatusBar } from 'expo-status-bar';
 
 import { images } from "../constants";
 import CustomButton from "../components/CustomButton";
@@ -44,7 +45,7 @@ const Home = () => {
         </View>
       </ScrollView>
 
-      <StatusBar backgroundColor="#161622" barStyle="light" />
+      <StatusBar backgroundColor="#161622" barStyle='light' />
     </SafeAreaView>
   );
 };
